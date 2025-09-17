@@ -10,7 +10,7 @@ import os
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'lp308OCGxTwab3ihPGy81DIVLGKSk2HQ'
+app.config['SECRET_KEY'] = 'lp308OCGxxxxxxxxVLGKSk2HQ'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 #创建config表格，并且储存如site.db
 
@@ -95,7 +95,7 @@ def index():
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('home'))
+    return redirect(url_for('login'))
 
 @app.route("/home")
 @login_required
@@ -135,7 +135,7 @@ def stream_response():
     message_time = datetime.fromisoformat(message_time_str)  # 将时间反序列化为 datetime 对象
 
     # 初始化 API 客户端
-    client = ZhipuAI(api_key="6e12ec311bf4dd8b4501eeeb57f29e90.Ceb13DZxzgRCP0YK")  # 替换为你的 API Key
+    client = ZhipuAI(api_key="6e12ec3xxxxxxxxxxzgRCP0YK")  # 替换为你的 API Key，已打码
     response = client.chat.completions.create(
         model="glm-4",
         messages=[
@@ -177,8 +177,6 @@ def submit_answer():
     db.session.commit()
 
     return {"status": "success"}, 200
-
-
 
 if __name__ == '__main__':
     with app.app_context():

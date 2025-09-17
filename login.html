@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
     <title>Login</title>
+    <link href="favicon.ico" rel="shortcut icon">
     <style type="text/css">
         body{
             background: url("https://s2.loli.net/2024/08/13/RP17iYhkr9MeXgv.webp") no-repeat center center fixed;
@@ -14,6 +15,52 @@
         }
     </style>
     <!--background-->
+
+    <style>
+    /* 样式：模态框背景 */
+    .modal {
+        display: flex; /* 使用 flexbox 布局 */
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+        position: fixed; /* 固定在屏幕上 */
+        z-index: 1; /* 置于最前 */
+        left: 0; /* 左侧边距 */
+        top: 0; /* 顶部边距 */
+        width: 100%; /* 满屏宽度 */
+        height: 100%; /* 满屏高度 */
+        background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    }
+
+    /* 样式：模态框内容 */
+    .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 8px;
+        width: 80%; /* 模态框宽度 */
+        max-width: 800px; /* 设置最大宽度 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+        margin: auto; /* 在垂直和水平方向上自动居中 */
+    }
+
+    /* 样式：确认按钮 */
+    .close-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        display: block;
+        margin: 20px auto 0 auto; /* 确认按钮居中 */
+    }
+
+    .close-btn:hover {
+        background-color: #45a049;
+    }
+    </style>
+
     <style>
     body {
         display: flex;
@@ -59,6 +106,30 @@
     <!--position fixed and skin design-->
 </head>
 <body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>亲爱的同学你好，</p>
+            <p>我是2024年本科生科研训练市级项目的负责人甲鱼,也是此平台的创作者.</p>
+            <p>本次大家依旧直接使用学号注册的账号密码登录即可,</p>
+            <p>请大家注意，登入登出的量表已经修改，还烦请大家认真完成~</p>
+            <p>------------------------</p>
+            <p>今天，应该是最后一次与你们见面,这也是最后一份opening talk~</p>
+            <p>在离别之前，想最后留给大家一段提醒。请勿盲目相信AI给你的答案。尝试着反问它、质疑它、反驳它...</p>
+            <p>不难发现，人工智能有些见风使舵，回答会出现前后矛盾的地方.</p>
+            <p>人工智能不代表真理，使用人工智能的目的也非获得一劳永逸的回答</p>
+            <p>希望各位在进入高等教育之始,学会与“人工”智能相处,也请诸位多一些怀疑,多一份独立的思考.</p>
+            <p>期待我能够在后台和大家共同进步，十一月快乐！                         </p>
+            <p>有任何程序问题，均可通过微信联系我，或者团队的另一位同学司晨</p>
+            <p>甲鱼（周耀媛）：Y1287604819，李司晨：You_deservehappiness</p>
+            <p>感谢你的支持！</p>
+            <p>                                                       2024.11.5  18：56</p>
+            <p>                                                    北京师范大学教七503后排</p>
+            <p>                                                           甲鱼</p>
+            <button class="close-btn" id="confirmBtn">确认</button>
+        </div>
+    </div>
+
+
     <div class="login-box" >
             <form method="POST">
                 <input class="pos_fixed" type="text" name="username" placeholder="请输入你的用户名" required><br>
@@ -68,5 +139,25 @@
             </form>
             <a class="button" href="{{ url_for('register') }}" style="width: 100px;">Register</a> 
     </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+    window.onload = function() {
+        modal.style.display = "block";
+    };
+    
+    var confirmBtn = document.getElementById("confirmBtn");
+    confirmBtn.onclick = function() {
+        modal.style.display = "none"; // 点击按钮后隐藏模态框
+    };
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+    </script>
 </body>
+
+
 </html>

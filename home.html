@@ -123,7 +123,7 @@
 }
 
 .question button {
-    margin: 5px;
+    margin: 4px;
 }
     </style>
 </head>
@@ -150,44 +150,44 @@
         <h3>请回答以下问题：</h3>
         <div class="question-container" id="questionContainer">
             <div class="question">
-                <p>我知道哪些信息对于学习是最重要的</p>
-                <button onclick="submitAnswer('yes', '我知道哪些信息对于学习是最重要的')">Yes</button>
-                <button onclick="submitAnswer('no', '我知道哪些信息对于学习是最重要的')">No</button>
+                <p>我能很好地判断我对某事的理解程度</p>
+                <button onclick="submitAnswer('yes', '我能很好地判断我对某事的理解程度。')">Yes</button>
+                <button onclick="submitAnswer('no', '我能很好地判断我对某事的理解程度。')">No</button>
             </div>
             <div class="question">
-                <p>当我学习时，我能意识到自己使用的哪种策略</p>
-                <button onclick="submitAnswer('yes','当我学习时，我能意识到自己使用的哪种策略')">Yes</button>
-                <button onclick="submitAnswer('no','当我学习时，我能意识到自己使用的哪种策略')">No</button>
+                <p>我会尽可能使用过去用过的有效的策略</p>
+                <button onclick="submitAnswer('yes','我会尽可能使用过去用过的有效的策略')">Yes</button>
+                <button onclick="submitAnswer('no','我会尽可能使用过去用过的有效的策略')">No</button>
             </div>
             <div class="question">
-                <p>根据不同的情况，我采用不同的学习策略。</p>
-                <button onclick="submitAnswer('yes','根据不同的情况，我采用不同的学习策略。')">Yes</button>
-                <button onclick="submitAnswer('no','根据不同的情况，我采用不同的学习策略。')">No</button>
+                <p>我知道每个策略何时使用能取得最好的效果</p>
+                <button onclick="submitAnswer('yes','我知道每个策略何时使用能取得最好的效果')">Yes</button>
+                <button onclick="submitAnswer('no','我知道每个策略何时使用能取得最好的效果')">No</button>
             </div>
             <div class="question">
-                <p>在我开始一项任务前，我会设置明确的目标。</p>
-                <button onclick="submitAnswer('yes','在我开始一项任务前，我会设置明确的目标')">Yes</button>
-                <button onclick="submitAnswer('no','在我开始一项任务前，我会设置明确的目标')">No</button>
+                <p>为了尽可能实现我的目标，我会管理自己的时间</p>
+                <button onclick="submitAnswer('yes','为了尽可能实现我的目标，我会管理自己的时间')">Yes</button>
+                <button onclick="submitAnswer('no','为了尽可能实现我的目标，我会管理自己的时间')">No</button>
             </div>
             <div class="question">
-                <p>碰到重要信息时我会集中注意力。</p>
-                <button onclick="submitAnswer('yes','碰到重要信息时我会集中注意力')">Yes</button>
-                <button onclick="submitAnswer('no','碰到重要信息时我会集中注意力')">No</button>
+                <p>我会自己建立有组织框架的文本来协助我学习</p>
+                <button onclick="submitAnswer('yes','我会自己建立有组织框架的文本来协助我学习')">Yes</button>
+                <button onclick="submitAnswer('no','我会自己建立有组织框架的文本来协助我学习')">No</button>
             </div>
             <div class="question">
-                <p>每隔一段时间我就会问自己是否达成了我的目标。</p>
-                <button onclick="submitAnswer('yes','每隔一段时间我就会问自己是否达成了我的目标')">Yes</button>
-                <button onclick="submitAnswer('no','每隔一段时间我就会问自己是否达成了我的目标')">No</button>
+                <p>我发现自己经常会停下来，以检查自己是否理解</p>
+                <button onclick="submitAnswer('yes','我发现自己经常会停下来，以检查自己是否理解')">Yes</button>
+                <button onclick="submitAnswer('no','我发现自己经常会停下来，以检查自己是否理解')">No</button>
             </div>
             <div class="question">
-                <p>当我无法理解的时候我会改变策略。</p>
-                <button onclick="submitAnswer('yes','当我无法理解的时候我会改变策略。')">Yes</button>
-                <button onclick="submitAnswer('no','当我无法理解的时候我会改变策略。')">No</button>
+                <p>当我感到困惑时，我会停下来并重新阅读</p>
+                <button onclick="submitAnswer('yes','当我感到困惑时，我会停下来并重新阅读')">Yes</button>
+                <button onclick="submitAnswer('no','当我感到困惑时，我会停下来并重新阅读')">No</button>
             </div>
             <div class="question">
-                <p>我做完一个测验后，我马上就知道自己做得好不好。</p>
-                <button onclick="submitAnswer('yes','我做完一个测验后，我马上就知道自己做得好不好')">Yes</button>
-                <button onclick="submitAnswer('no','我做完一个测验后，我马上就知道自己做得好不好')">No</button>
+                <p>当我解决了一个问题后，我会问自己是否已经考虑了全部的可能选择</p>
+                <button onclick="submitAnswer('yes','当我解决了一个问题后，我会问自己是否已经考虑了全部的可能选择')">Yes</button>
+                <button onclick="submitAnswer('no','当我解决了一个问题后，我会问自己是否已经考虑了全部的可能选择')">No</button>
             </div>
         </div>
         <button onclick="closeModal()" style="margin-top: 20px;">Close</button>
@@ -201,44 +201,46 @@
         <div class="question-container" id="initialQuestionContainer"> 
             <!-- external -->
             <div class="question">
-                <p>我学习是因为我担心受到惩罚</p>
-                <button onclick="submitInitialAnswer(1, '我学习是因为我担心受到惩罚', this)">1</button>
-                <button onclick="submitInitialAnswer(2, '我学习是因为我担心受到惩罚', this)">2</button>
-                <button onclick="submitInitialAnswer(3, '我学习是因为我担心受到惩罚', this)">3</button>
-                <button onclick="submitInitialAnswer(4, '我学习是因为我担心受到惩罚', this)">4</button>
-                <button onclick="submitInitialAnswer(5, '我学习是因为我担心受到惩罚', this)">5</button>
+                <p>我学习是因为我被期待这样做</p>
+                <button onclick="submitInitialAnswer(1, '我学习是因为我被期待这样做', this)">1</button>
+                <button onclick="submitInitialAnswer(2, '我学习是因为我被期待这样做', this)">2</button>
+                <button onclick="submitInitialAnswer(3, '我学习是因为我被期待这样做', this)">3</button>
+                <button onclick="submitInitialAnswer(4, '我学习是因为我被期待这样做', this)">4</button>
+                <button onclick="submitInitialAnswer(5, '我学习是因为我被期待这样做', this)">5</button>
             </div>
             <!-- introjection -->
             <div class="question">
-                <p>我学习是因为，希望老师觉得我是一个好学生</p>
-                <button onclick="submitInitialAnswer(1, '我学习是因为，希望老师觉得我是一个好学生', this)">1</button>
-                <button onclick="submitInitialAnswer(2, '我学习是因为，希望老师觉得我是一个好学生', this)">2</button>
-                <button onclick="submitInitialAnswer(3, '我学习是因为，希望老师觉得我是一个好学生', this)">3</button>
-                <button onclick="submitInitialAnswer(4, '我学习是因为，希望老师觉得我是一个好学生', this)">4</button>
-                <button onclick="submitInitialAnswer(5, '我学习是因为，希望老师觉得我是一个好学生', this)">5</button>
+                <p>我学习是因为，不学习时会为自己感到羞愧</p>
+                <button onclick="submitInitialAnswer(1, '我学习是因为，不学习时会为自己感到羞愧', this)">1</button>
+                <button onclick="submitInitialAnswer(2, '我学习是因为，不学习时会为自己感到羞愧', this)">2</button>
+                <button onclick="submitInitialAnswer(3, '我学习是因为，不学习时会为自己感到羞愧', this)">3</button>
+                <button onclick="submitInitialAnswer(4, '我学习是因为，不学习时会为自己感到羞愧', this)">4</button>
+                <button onclick="submitInitialAnswer(5, '我学习是因为，不学习时会为自己感到羞愧', this)">5</button>
             </div>
             <!-- indentification -->
             <div class="question">
-                <p>我学习是因为，希望自己能够学到新知识</p>
-                <button onclick="submitInitialAnswer(1, '我学习是因为，希望自己能够学到新知识', this)">1</button>
-                <button onclick="submitInitialAnswer(2, '我学习是因为，希望自己能够学到新知识', this)">2</button>
-                <button onclick="submitInitialAnswer(3, '我学习是因为，希望自己能够学到新知识', this)">3</button>
-                <button onclick="submitInitialAnswer(4, '我学习是因为，希望自己能够学到新知识', this)">4</button>
-                <button onclick="submitInitialAnswer(5, '我学习是因为，希望自己能够学到新知识', this)">5</button>
+                <p>我学习是因为，我想知道自己是否正确</p>
+                <button onclick="submitInitialAnswer(1, '我学习是因为，我想知道自己是否正确', this)">1</button>
+                <button onclick="submitInitialAnswer(2, '我学习是因为，我想知道自己是否正确', this)">2</button>
+                <button onclick="submitInitialAnswer(3, '我学习是因为，我想知道自己是否正确', this)">3</button>
+                <button onclick="submitInitialAnswer(4, '我学习是因为，我想知道自己是否正确', this)">4</button>
+                <button onclick="submitInitialAnswer(5, '我学习是因为，我想知道自己是否正确', this)">5</button>
             </div>
             <!-- intrinsic -->
             <div class="question">
-                <p>我学习是因为，学习很有趣</p>
-                <button onclick="submitInitialAnswer(1, '我学习是因为，学习很有趣', this)">1</button>
-                <button onclick="submitInitialAnswer(2, '我学习是因为，学习很有趣', this)">2</button>
-                <button onclick="submitInitialAnswer(3, '我学习是因为，学习很有趣', this)">3</button>
-                <button onclick="submitInitialAnswer(4, '我学习是因为，学习很有趣', this)">4</button>
-                <button onclick="submitInitialAnswer(5, '我学习是因为，学习很有趣', this)">5</button>
+                <p>我学习是因为，我很享受学习</p>
+                <button onclick="submitInitialAnswer(1, '我学习是因为，我很享受学习', this)">1</button>
+                <button onclick="submitInitialAnswer(2, '我学习是因为，我很享受学习', this)">2</button>
+                <button onclick="submitInitialAnswer(3, '我学习是因为，我很享受学习', this)">3</button>
+                <button onclick="submitInitialAnswer(4, '我学习是因为，我很享受学习', this)">4</button>
+                <button onclick="submitInitialAnswer(5, '我学习是因为，我很享受学习', this)">5</button>
             </div>
         </div>
         <button onclick="closeInitialModal()" style="margin-top: 20px;">Close</button>
     </div>
 </div>
+
+
 
 
     <script>
@@ -358,8 +360,6 @@
         }
 
 
-
-
     // 页面加载时显示初始量表弹窗
     window.onload = function() {
         document.getElementById("initialSurveyModal").style.display = "flex";
@@ -395,6 +395,10 @@
     function closeInitialModal() {
         document.getElementById("initialSurveyModal").style.display = "none";
     }
+
+    
+
+
     </script>
 </body>
 </html>

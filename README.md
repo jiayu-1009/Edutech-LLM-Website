@@ -1,12 +1,9 @@
-<img width="960" height="475" alt="图2" src="https://github.com/user-attachments/assets/6cadd7ce-59c3-4990-877d-7749b9b1d6cb" />这是我完成的第一个项目，从2024.8开始开发，到2024.9投入使用，再到2024.12实验完成。
+这是我完成的第一个项目，从2024.8开始开发，到2024.9投入使用，再到2024.12实验完成。
 这个项目投入了我非常非常多心血，是我第一个完整的教育网站。
 
 这个网站实现了用户注册、登录的功能，登陆过后将会看到一个弹窗，弹窗中的作用是收集学生此刻的情绪状态，作为研究数据。
 完成弹窗中的题目之后，即可开始与大语言模型进行交互。该大语言模型调用自zhipu的API，在后台经过特定的数据训练，
 可作为本课的教学助理，为同学们解答专业相关的内容。用户与大语言模型的所有交互内容将会在后台被收集，这些交互数据将会被进一步分析。
-<img width="960" height="475" alt="图2" src="https://github.com/user-attachments/assets/44c97653-9f83-47de-a346-7cb1d2aa0989" />
-
-<img width="960" height="475" alt="图1" src="https://github.com/user-attachments/assets/166f1b64-8434-43b6-86e0-256c15650f26" />
 
 This is my first completed project. Development began in August 2024, went live in September 2024,
 and the experiment was completed in December 2024. I put a tremendous amount of effort into this project,
@@ -18,6 +15,10 @@ After completing the questions in the pop-up window, you can begin interacting w
 This large language model, which uses the Zhipu API and is trained with specific data in the backend, 
 serves as a teaching assistant for this course, providing students with answers related to their major. 
 All user interactions with the large language model are collected in the backend for further analysis.
+
+<img width="960" height="475" alt="图2" src="https://github.com/user-attachments/assets/44c97653-9f83-47de-a346-7cb1d2aa0989" />
+
+<img width="960" height="475" alt="图1" src="https://github.com/user-attachments/assets/166f1b64-8434-43b6-86e0-256c15650f26" />
 
 这个项目的设计中包含了我自己个人的非常多巧思，例如我会在登陆界面弹出一个窗口，同学们可以看到我在窗口上的寄语。
 两个界面背景均来自于宫崎骏的电影《天空之城》，这是我最喜欢的电影之一，因为我希望通过一门与大语言模型合作的课，
